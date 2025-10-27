@@ -9,7 +9,7 @@
   <link rel="icon" href="assets/favicon.png">
 </head>
 <body class="min-h-screen flex flex-col bg-[#F4F4F4] text-gray-800 dark:bg-black dark:text-white">
-  <header class="bg-white dark:bg-black shadow-sm sticky top-0 left-0 right-0 z-50 border-b border-neutral-200 dark:border-white/10">
+  <header class="bg-white dark:bg-black shadow-sm sticky top-0 z-50 border-b border-neutral-200 dark:border-white/10">
     <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-3">
       <a href="index.html" class="flex items-center space-x-2">
         <img src="assets/logo.webp" alt="ISP Global Inc" class="h-10 w-auto rounded-full bg-white">
@@ -31,24 +31,23 @@
         <h2 class="text-2xl font-bold">Driver Application</h2>
         <p class="text-sm text-gray-500 dark:text-gray-400 mb-6">We’ll reach out after reviewing your information.</p>
 
-        <!-- ✅ WIRED FORM -->
+        <!-- ✅ wired form -->
         <form
           action="https://script.google.com/macros/s/AKfycbwoc9kET-ZJpU50dJt6gzIROrMxgU0Qh74nhgACAuVLbR5t-53-gqCJWWxahhL4DC4V/exec"
           method="POST"
           class="space-y-4"
         >
-          <!-- hidden fields -->
           <input type="hidden" name="form_type" value="drive">
           <input type="hidden" name="_redirect" value="thank-you.html">
           <input type="hidden" name="token" value="Qw9xD3iKlmanewbd9f7Sd">
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <input type="text" name="first_name" placeholder="First Name*" class="border rounded-md px-3 py-2 w-full dark:bg-black/30 dark:border-white/20" required>
-            <input type="text" name="last_name" placeholder="Last Name*" class="border rounded-md px-3 py-2 w-full dark:bg-black/30 dark:border-white/20" required>
-            <input type="email" name="email" placeholder="Email*" class="border rounded-md px-3 py-2 w-full dark:bg-black/30 dark:border-white/20" required>
-            <input type="tel" name="phone" placeholder="Phone*" class="border rounded-md px-3 py-2 w-full dark:bg-black/30 dark:border-white/20" required>
-            <input type="date" name="dob" class="border rounded-md px-3 py-2 w-full dark:bg-black/30 dark:border-white/20" required>
-            <input type="text" name="address" placeholder="Address*" class="border rounded-md px-3 py-2 w-full dark:bg-black/30 dark:border-white/20" required>
+            <input type="text" name="last_name"  placeholder="Last Name*"  class="border rounded-md px-3 py-2 w-full dark:bg-black/30 dark:border-white/20" required>
+            <input type="email" name="email"     placeholder="Email*"      class="border rounded-md px-3 py-2 w-full dark:bg-black/30 dark:border-white/20" required>
+            <input type="tel"   name="phone"     placeholder="Phone*"      class="border rounded-md px-3 py-2 w-full dark:bg-black/30 dark:border-white/20" required>
+            <input type="date"  name="dob"       class="border rounded-md px-3 py-2 w-full dark:bg-black/30 dark:border-white/20" required>
+            <input type="text"  name="address"   placeholder="Address*"    class="border rounded-md px-3 py-2 w-full dark:bg-black/30 dark:border-white/20" required>
           </div>
 
           <div>
@@ -99,7 +98,8 @@
             </select>
           </div>
 
-          <textarea name="notes" placeholder="Notes (optional)" class="border rounded-md px-3 py-2 w-full h-24 dark:bg-black/30 dark:border-white/20"></textarea>
+          <textarea name="notes" placeholder="Notes (optional)"
+            class="border rounded-md px-3 py-2 w-full h-24 dark:bg-black/30 dark:border-white/20"></textarea>
 
           <label class="flex items-center text-sm">
             <input type="checkbox" required class="mr-2">
