@@ -2,23 +2,22 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Get a Quote — ISP Global Inc</title>
-<meta content="ISP Global Inc — Reliable &amp; Efficient Trucking Solutions across the USA" name="description"/>
+<meta name="description" content="ISP Global Inc — Reliable &amp; Efficient Trucking Solutions across the USA"/>
 <script src="https://cdn.tailwindcss.com"></script>
 <script>tailwind.config = { darkMode: 'class' }</script>
 <style>
-  body { background:#F4F4F4; color:#000000; }
-  .shadow-soft { box-shadow:0 12px 30px rgba(0,0,0,.10); }
-  .link-muted { color:#1f2937; }
-  .link-muted:hover { color:#0066FF; }
+  body { background:#F4F4F4; color:#000; }
+  .link-muted{color:#1f2937}
+  .link-muted:hover{color:#0066FF}
 </style>
 </head>
-<body class="flex-col bg-[#F4F4F4] dark:bg-black dark:text-white min-h-screen flex text-gray-900">
-<header class="dark:bg-black dark:border-white/10 border-neutral-200 border-b bg-white">
-  <div class="max-w-7xl mx-auto flex items-center justify-between py-4 px-4 sm:px-6 lg:px-8 border-b border-gray-200 dark:border-gray-800">
-    <a class="flex items-center space-x-2" href="index.html">
-      <img alt="ISP Global Inc" class="h-10 w-auto rounded-full bg-white" src="assets/logo.webp"/>
+<body class="min-h-screen flex flex-col bg-[#F4F4F4] text-gray-900 dark:bg-black dark:text-white">
+<header class="bg-white dark:bg-black border-b border-neutral-200 dark:border-white/10">
+  <div class="max-w-7xl mx-auto flex items-center justify-between py-4 px-4 sm:px-6 lg:px-8">
+    <a href="index.html" class="flex items-center space-x-2">
+      <img src="assets/logo.webp" alt="ISP Global Inc" class="h-10 w-auto rounded-full bg-white"/>
       <span class="font-bold text-lg">ISP Global Inc</span>
     </a>
     <nav class="space-x-6 text-sm font-medium">
@@ -31,59 +30,48 @@
   </div>
 </header>
 
-<section class="px-4 sm:px-6 mx-auto py-12 flex-1 lg:px-8 max-w-3xl">
+<main class="flex-1 px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto py-12">
   <h1 class="text-3xl font-bold">Get a Quote</h1>
-  <p class="mt-3 text-gray-700">Tell us about your logistics needs and we’ll get back quickly.</p>
+  <p class="mt-3 text-gray-700 dark:text-gray-300">Tell us about your logistics needs and we’ll get back quickly.</p>
 
-  <!-- ✅ Updated form connected to Google Apps Script -->
+  <!-- ✅ wired form -->
   <form
     action="https://script.google.com/macros/s/AKfycbwoc9kET-ZJpU50dJt6gzIROrMxgU0Qh74nhgACAuVLbR5t-53-gqCJWWxahhL4DC4V/exec"
     method="POST"
     class="mt-6 space-y-4"
   >
-    <!-- Hidden fields for routing -->
-    <input type="hidden" name="form_type" value="quote"/>
-    <input type="hidden" name="_redirect" value="thank-you.html"/>
-    <input type="hidden" name="token" value="Qw9xD3iKlmanewbd9f7Sd"/>
+    <!-- hidden -->
+    <input type="hidden" name="form_type" value="quote">
+    <input type="hidden" name="_redirect" value="thank-you.html">
+    <input type="hidden" name="token" value="Qw9xD3iKlmanewbd9f7Sd">
 
-    <!-- User inputs -->
     <div class="grid md:grid-cols-2 gap-4">
-      <input class="rounded-lg border px-3 py-2" name="full_name" placeholder="Name*" required/>
-      <input class="rounded-lg border px-3 py-2" name="phone" placeholder="Phone*" required/>
+      <input class="rounded-lg border px-3 py-2" name="full_name" placeholder="Name*" required>
+      <input class="rounded-lg border px-3 py-2" name="phone" placeholder="Phone*" required>
     </div>
 
     <div class="grid md:grid-cols-2 gap-4">
-      <input class="rounded-lg border px-3 py-2" name="email" placeholder="Email*" type="email" required/>
-      <input class="rounded-lg border px-3 py-2" name="company" placeholder="Company*"/>
+      <input class="rounded-lg border px-3 py-2" name="email" placeholder="Email*" type="email" required>
+      <input class="rounded-lg border px-3 py-2" name="company" placeholder="Company">
     </div>
 
-    <textarea
-      class="rounded-lg border px-3 py-2 w-full"
-      name="message"
-      placeholder="Details about lanes, volume, timing (optional)"
-      rows="5"
-    ></textarea>
+    <textarea class="rounded-lg border px-3 py-2 w-full" name="message" rows="5"
+      placeholder="Details about lanes, volume, timing (optional)"></textarea>
 
-    <button
-      type="submit"
-      class="w-full rounded-full bg-[#0066FF] text-white py-3 font-semibold hover:bg-[#0052cc]"
-    >
+    <button type="submit"
+      class="w-full rounded-full bg-[#0066FF] hover:bg-[#0052cc] text-white py-3 font-semibold">
       Submit
     </button>
   </form>
-</section>
+</main>
 
 <footer class="mt-0 bg-black text-white py-10 border-t border-white/10">
   <div class="max-w-7xl mx-auto px-6 text-center text-sm space-y-2">
     <p>© 2025 ISP Global Inc. All rights reserved.</p>
-    <p>
-      <a class="hover:underline" href="privacy.html">Privacy Policy</a> |
-      <a class="hover:underline" href="terms.html">Terms of Service</a>
-    </p>
+    <p><a class="hover:underline" href="privacy.html">Privacy Policy</a> | <a class="hover:underline" href="terms.html">Terms of Service</a></p>
     <p>1020 Milwaukee Ave, Ste 207, Deerfield, IL 60015 | +1 (224) 795-3151</p>
   </div>
 </footer>
-
 <script>
   const mode = localStorage.getItem('isp-theme');
   if (mode === 'dark' || (!mode && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
