@@ -4,58 +4,137 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Terms of Service — ISP Global Inc</title>
-  <meta name="description" content="Terms governing use of ISP Global Inc's website and services.">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>tailwind.config = { darkMode: 'class' }</script>
+  <meta name="description" content="Terms of Service for ISP Global Inc." />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
   <link rel="icon" href="assets/favicon.png">
 </head>
-<body class="min-h-screen flex flex-col bg-[#F4F4F4] text-gray-900 dark:bg-black dark:text-white">
+<body class="min-h-screen flex flex-col bg-[#F4F4F4] text-gray-900">
   <main class="flex-1">
+    <!-- Hero -->
     <section class="bg-black text-white">
       <div class="max-w-7xl mx-auto px-6 py-14">
         <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">Terms of Service</h1>
         <p class="mt-3 text-gray-300">Last updated: September 18, 2025</p>
-        <div class="mt-6">
-          <a href="index.html" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#0066FF] text-white hover:bg-[#0052cc] transition">← Back to Home</a>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="index.html" class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/30 text-white bg-white/10 hover:bg-white/20 transition">← Back to Home</a>
+          <a href="#contact" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#0066FF] text-white hover:bg-[#0052cc] transition">Contact Us</a>
         </div>
       </div>
     </section>
 
+    <!-- Content -->
     <section class="max-w-4xl mx-auto px-6">
-      <div class="relative -mt-10 bg-white dark:bg-neutral-900 rounded-2xl shadow-xl ring-1 ring-gray-200 dark:ring-white/10 p-6 md:p-10">
-        <article class="prose prose-neutral max-w-none dark:prose-invert">
-          <h2 class="text-xl font-bold">ISP Global Terms of Service</h2>
-          <p class="text-sm text-gray-500">Last updated: September 18, 2025</p>
+      <div class="relative -mt-10 bg-white rounded-2xl shadow-xl ring-1 ring-gray-200 p-6 md:p-10">
+        <!-- In-page nav -->
+        <nav class="mb-6 border-b pb-4 text-sm text-gray-600">
+          <p class="font-semibold mb-2">On this page</p>
+          <ol class="list-decimal ml-5 grid sm:grid-cols-2 gap-y-1">
+            <li><a class="hover:text-[#0066FF]" href="#intro">Welcome / Agreement</a></li>
+            <li><a class="hover:text-[#0066FF]" href="#use">1. Use of the Site</a></li>
+            <li><a class="hover:text-[#0066FF]" href="#accuracy">2. No Guarantee of Accuracy</a></li>
+            <li><a class="hover:text-[#0066FF]" href="#ip">3. Intellectual Property</a></li>
+            <li><a class="hover:text-[#0066FF]" href="#third">4. Third-Party Links</a></li>
+            <li><a class="hover:text-[#0066FF]" href="#liability">5. Limitation of Liability</a></li>
+            <li><a class="hover:text-[#0066FF]" href="#indemnity">6. Indemnification</a></li>
+            <li><a class="hover:text-[#0066FF]" href="#privacy">7. Privacy Policy</a></li>
+            <li><a class="hover:text-[#0066FF]" href="#changes">8. Changes to Terms</a></li>
+            <li><a class="hover:text-[#0066FF]" href="#law">9. Governing Law</a></li>
+            <li><a class="hover:text-[#0066FF]" href="#contact">10. Contact Us</a></li>
+          </ol>
+        </nav>
 
-          <h3>1. Use of the Site</h3>
-          <p>You may use this site only for lawful purposes and in accordance with these Terms. You agree not to attempt to access, modify, or disrupt the site or its services.</p>
+        <article class="prose max-w-none">
+          <section id="intro" class="mb-6">
+            <h2 class="text-xl font-bold">Welcome to ISP Global Terms of Service</h2>
+            <p>
+              Welcome to ISP Global’s website (<a class="text-[#0066FF]" href="https://sites.google.com/ispglobalinc.com" target="_blank" rel="noopener">https://sites.google.com/ispglobalinc.com</a>).
+              By accessing or using our site, you agree to these Terms of Service (“Terms”). Please read them carefully.
+              If you do not agree, you should not use this site.
+            </p>
+          </section>
 
-          <h3>2. No Guarantee of Accuracy</h3>
-          <p>We strive for accuracy but do not warrant the completeness or reliability of any content. Information may be updated without notice.</p>
+          <section id="use" class="mb-6">
+            <h2 class="text-xl font-bold">1. Use of the Site</h2>
+            <ul class="list-disc ml-6">
+              <li>You may use this site only for lawful purposes and in accordance with these Terms.</li>
+              <li>You agree not to use the site in any way that could disable, damage, or impair its function.</li>
+              <li>Unauthorized attempts to access, modify, or disrupt our site are strictly prohibited.</li>
+            </ul>
+          </section>
 
-          <h3>3. Intellectual Property</h3>
-          <p>All text, logos, and other content are the property of ISP Global Inc or its licensors. You may not reuse materials without written permission, except for personal, non-commercial use.</p>
+          <section id="accuracy" class="mb-6">
+            <h2 class="text-xl font-bold">2. No Guarantee of Accuracy</h2>
+            <p>
+              We strive to keep information on this site current and accurate, but ISP Global does not warrant or guarantee the completeness,
+              reliability, or accuracy of any content. The site may contain errors or be updated without notice.
+            </p>
+          </section>
 
-          <h3>4. Third-Party Links</h3>
-          <p>Links to third-party services (e.g., Google Maps) are provided for convenience. We are not responsible for their content or practices.</p>
+          <section id="ip" class="mb-6">
+            <h2 class="text-xl font-bold">3. Intellectual Property</h2>
+            <ul class="list-disc ml-6">
+              <li>All text, logos, and other content on this site are the property of ISP Global or its licensors.</li>
+              <li>You may not copy, distribute, or use our materials without written permission, except for personal, non-commercial use.</li>
+            </ul>
+          </section>
 
-          <h3>5. Limitation of Liability</h3>
-          <p>To the maximum extent permitted by law, ISP Global Inc is not liable for any damages arising from use of the site or reliance on its content.</p>
+          <section id="third" class="mb-6">
+            <h2 class="text-xl font-bold">4. Third-Party Links</h2>
+            <p>
+              This site may include links or integrations with third-party services (e.g., Google Maps, analytics tools). These are provided for convenience.
+              ISP Global does not control and is not responsible for third-party sites or services.
+            </p>
+          </section>
 
-          <h3>6. Indemnification</h3>
-          <p>You agree to indemnify and hold ISP Global Inc, its officers, employees, and partners harmless from claims resulting from your violation of these Terms.</p>
+          <section id="liability" class="mb-6">
+            <h2 class="text-xl font-bold">5. Limitation of Liability</h2>
+            <p>To the maximum extent permitted by law:</p>
+            <ul class="list-disc ml-6">
+              <li>ISP Global is not liable for any damages arising from use of the site or reliance on its content.</li>
+              <li>This includes direct, indirect, incidental, or consequential damages, even if we have been advised of the possibility.</li>
+            </ul>
+          </section>
 
-          <h3>7. Privacy Policy</h3>
-          <p>Your use of this site is governed by our <a href="privacy.html" class="text-[#66a3ff]">Privacy Policy</a>.</p>
+          <section id="indemnity" class="mb-6">
+            <h2 class="text-xl font-bold">6. Indemnification</h2>
+            <p>
+              You agree to indemnify and hold ISP Global, its officers, employees, and partners harmless from any claims, losses, or damages resulting
+              from your violation of these Terms or misuse of the site.
+            </p>
+          </section>
 
-          <h3>8. Changes to Terms</h3>
-          <p>We may revise these Terms. Updates will be posted on this page with a new “Last Updated” date. Your continued use constitutes acceptance.</p>
+          <section id="privacy" class="mb-6">
+            <h2 class="text-xl font-bold">7. Privacy Policy</h2>
+            <p>
+              Your use of this site is also governed by our <a class="text-[#0066FF]" href="privacy.html">Privacy Policy</a>, which explains how we collect and use personal information.
+            </p>
+          </section>
 
-          <h3>9. Governing Law</h3>
-          <p>These Terms are governed by the laws of the State of <strong>Illinois</strong>, without regard to its conflict-of-law provisions.</p>
+          <section id="changes" class="mb-6">
+            <h2 class="text-xl font-bold">8. Changes to Terms</h2>
+            <p>
+              We may revise these Terms from time to time. Updates will be posted on this page with a new “Last Updated” date.
+              Your continued use of the site means you accept any changes.
+            </p>
+          </section>
 
-          <h3>10. Contact</h3>
-          <p>ISP Global Inc — 1020 Milwaukee Ave, Ste 207, Deerfield, IL 60015 — <a href="mailto:dispatcher@ispglobalinc.com" class="text-[#66a3ff]">dispatcher@ispglobalinc.com</a></p>
+          <section id="law" class="mb-6">
+            <h2 class="text-xl font-bold">9. Governing Law</h2>
+            <p>
+              These Terms are governed by and construed under the laws of the State of <em>[Insert State]</em>, without regard to its conflict of law provisions.
+            </p>
+          </section>
+
+          <section id="contact" class="mb-2">
+            <h2 class="text-xl font-bold">10. Contact Us</h2>
+            <p>If you have questions about these Terms, please contact us:</p>
+            <p>Email: <a class="text-[#0066FF]" href="mailto:dispatcher@ispglobalinc.com">dispatcher@ispglobalinc.com</a></p>
+            <p>Address: 1020 Milwaukee Ave, Ste 207, Deerfield, IL 60015</p>
+          </section>
+
+          <div class="mt-8">
+            <a href="#top" class="text-sm text-gray-600 hover:text-[#0066FF]">Back to top ↑</a>
+          </div>
         </article>
       </div>
     </section>
@@ -66,10 +145,5 @@
       © 2025 ISP Global Inc — All Rights Reserved.
     </div>
   </footer>
-
-  <script>
-    const mode = localStorage.getItem('isp-theme');
-    if (mode === 'dark') document.documentElement.classList.add('dark');
-  </script>
 </body>
 </html>
