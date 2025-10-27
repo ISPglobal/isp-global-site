@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/23154441/README.md)
 # ISP Global Inc — Static Site
 
 Live: https://ispglobal.github.io/isp-global-site
